@@ -1,37 +1,91 @@
 body {
 	margin: 0;
-	padding: 0 0 1em 0;
-	font-size: 1em;
-	line-height: 1.5em;
-	color: #414142;
+	padding: 0;
 	font-family: Arial;
 }
 #header {
 	position: fixed;
 	width: 100%;
-	height: 100px;
+	height: 70px;
+	box-sizing: border-box;
 	background-color: #000000;
 	z-index: 10;
+	padding: 20px;
 }
+#header a:link, #header a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
 #hero-block{
 	position: relative;
 	width: 100%;
-	top: 100px;
 	overflow: auto;
-	padding: 20px;
+	padding-top: 70px;
 	background-color: #99ccee;
 }
-#hero-text{
+#banner-text{
+	text-align: center;
+	font-size: 300%;
+}
+#side-text{
+	display: inline-block;
 	position: relative;
-	left: 100px;
+	margin-left: 10%;
+	width: 400px;
+	font-size: 150%;
+	vertical-align: top;
 }
 #css-image{
+	display: inline-block;
 	float: right;
-
+	margin-right: 10%;
+	width: 300px;
+	height: 300px;
+	vertical-align: top;
+}
+#modules-block{
+	text-align: center;
 }
 .box {
-
+	vertical-align: top;
+	display: inline-block;
+	position: relative;
+	border: solid #99ccee 3px;
+	width: 200px;
+	height: 200px;
+	margin: 20px;
 }
 .box-label {
+	background-color: #99ccee;
+	text-align: center;
+	margin-top: 0;
+}
 
+
+
+@media (max-width: 700px){
+	#css-image{
+		display: none;
+	}
+	#banner-text{
+		text-align: center;
+		font-size: 100%;
+	}
+	#side-text{
+		display: none;
+	}
+}
+@media (min-width: 700px) and (max-width: 960px){
+	#css-image{
+		width: 150px;
+		height: 150px;
+	}
+	#banner-text{
+		text-align: center;
+		font-size: 200%;
+	}
+	#side-text{
+		font-size: 100%;
+	}
 }
